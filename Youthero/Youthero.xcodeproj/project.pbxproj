@@ -13,6 +13,8 @@
 		BB781FBC2584E8350007B8B7 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB781FBB2584E8350007B8B7 /* PrimaryButton.swift */; };
 		BB781FC02584EB610007B8B7 /* TypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB781FBF2584EB610007B8B7 /* TypePicker.swift */; };
 		BB781FC42584F5CF0007B8B7 /* ThanksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB781FC32584F5CF0007B8B7 /* ThanksView.swift */; };
+		BB781FCC258502C70007B8B7 /* TeacherReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB781FCB258502C70007B8B7 /* TeacherReview.swift */; };
+		BB781FD0258502E30007B8B7 /* SchoolReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB781FCF258502E30007B8B7 /* SchoolReview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BB781FBB2584E8350007B8B7 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		BB781FBF2584EB610007B8B7 /* TypePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePicker.swift; sourceTree = "<group>"; };
 		BB781FC32584F5CF0007B8B7 /* ThanksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksView.swift; sourceTree = "<group>"; };
+		BB781FCB258502C70007B8B7 /* TeacherReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherReview.swift; sourceTree = "<group>"; };
+		BB781FCF258502E30007B8B7 /* SchoolReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolReview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +79,11 @@
 		BB781FB52584D4870007B8B7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				BB781FC22584F5B50007B8B7 /* ThanksScreen */,
-				BB781FBE2584EA130007B8B7 /* TypePicker */,
 				BB781FB72584D4920007B8B7 /* Home */,
+				BB781FBE2584EA130007B8B7 /* TypePicker */,
+				BB781FC9258502A70007B8B7 /* TeacherReview */,
+				BB781FCA258502AF0007B8B7 /* SchoolReview */,
+				BB781FC22584F5B50007B8B7 /* ThanksScreen */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -105,6 +111,22 @@
 				BB781FC32584F5CF0007B8B7 /* ThanksView.swift */,
 			);
 			path = ThanksScreen;
+			sourceTree = "<group>";
+		};
+		BB781FC9258502A70007B8B7 /* TeacherReview */ = {
+			isa = PBXGroup;
+			children = (
+				BB781FCB258502C70007B8B7 /* TeacherReview.swift */,
+			);
+			path = TeacherReview;
+			sourceTree = "<group>";
+		};
+		BB781FCA258502AF0007B8B7 /* SchoolReview */ = {
+			isa = PBXGroup;
+			children = (
+				BB781FCF258502E30007B8B7 /* SchoolReview.swift */,
+			);
+			path = SchoolReview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +199,11 @@
 			files = (
 				BB781FBC2584E8350007B8B7 /* PrimaryButton.swift in Sources */,
 				BB781FA72584D46A0007B8B7 /* HomeView.swift in Sources */,
+				BB781FCC258502C70007B8B7 /* TeacherReview.swift in Sources */,
 				BB781FA52584D46A0007B8B7 /* YoutheroApp.swift in Sources */,
 				BB781FC02584EB610007B8B7 /* TypePicker.swift in Sources */,
 				BB781FC42584F5CF0007B8B7 /* ThanksView.swift in Sources */,
+				BB781FD0258502E30007B8B7 /* SchoolReview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
