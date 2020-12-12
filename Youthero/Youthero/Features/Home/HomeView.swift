@@ -8,26 +8,31 @@ struct HomeView: View {
         ZStack {
             Color("secondColor")
             VStack {
-                Spacer(minLength: 220)
+                Spacer(minLength: 300)
                 Text("Youthero")
                     .font(.system(size: 60))
                     .fontWeight(.bold)
                     .foregroundColor(Color("mainColor"))
-                    .padding()
-                
-                Spacer(minLength: 10)
-                       
-                NavigationLink(destination: TypePicker(rootIsActive: self.$isActive), isActive: $isActive) {   Button {
-                    isActive = true
-                } label: {
-                    Text("Add your review!")
-                }.modifier(PrimaryButton()) }
-
-                Spacer(minLength: 200)
+                   
+  
                 Text("Youth can change the world")
                     .font(.headline)
                     .foregroundColor(Color("mainColor"))
-                Spacer(minLength: 100)
+                    .padding(.top, 6)
+                       
+               Spacer()
+                
+                NavigationLink(destination: TypePicker(rootIsActive: self.$isActive), isActive: $isActive) {   Button {
+                    isActive = true
+                } label: {
+                    Text("Add your review")
+                        .fontWeight(.medium)
+                }.modifier(PrimaryButton()) }
+                .padding(.top, 100)
+
+         
+   
+                Spacer(minLength: 300)
             }
         }.ignoresSafeArea()
         }
