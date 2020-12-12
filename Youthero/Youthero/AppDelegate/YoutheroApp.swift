@@ -4,7 +4,7 @@ import SwiftUI
 struct YoutheroApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
