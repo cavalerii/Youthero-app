@@ -12,7 +12,7 @@ struct TypePicker: View {
             VStack {
                 Spacer()
                 
-                NavigationLink(destination: ThanksView(shouldPopToRootView: $rootIsActive), isActive: $shouldShowTeacherView) {
+                NavigationLink(destination: TeacherReview(rootIsActive: $rootIsActive), isActive: $shouldShowTeacherView) {
                     Button {
                         shouldShowTeacherView = true
                     } label: {
@@ -34,9 +34,8 @@ struct TypePicker: View {
                 }
                 
                 Spacer()
-                
 
-                NavigationLink(destination: ThanksView(shouldPopToRootView: $rootIsActive), isActive: $shouldShowSchoolView) {
+                NavigationLink(destination: SchoolReview(rootIsActive: $rootIsActive), isActive: $shouldShowSchoolView) {
                     Button {
                         shouldShowSchoolView = true
                     } label: {

@@ -41,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB0FFA492585192F000638B7 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				BB781FBB2584E8350007B8B7 /* PrimaryButton.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		BB781F982584D46A0007B8B7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +70,7 @@
 			children = (
 				BB781FB42584D47E0007B8B7 /* AppDelegate */,
 				BB781FB52584D4870007B8B7 /* Features */,
+				BB0FFA492585192F000638B7 /* Modifiers */,
 				BB781FA82584D46D0007B8B7 /* Assets.xcassets */,
 				BB781FAD2584D46D0007B8B7 /* Info.plist */,
 			);
@@ -91,7 +100,6 @@
 		BB781FB72584D4920007B8B7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BB781FBB2584E8350007B8B7 /* PrimaryButton.swift */,
 				BB781FA62584D46A0007B8B7 /* HomeView.swift */,
 			);
 			path = Home;

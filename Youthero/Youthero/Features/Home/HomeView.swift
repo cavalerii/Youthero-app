@@ -1,6 +1,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    init() {
+        UITableView.appearance().backgroundColor = .clear
+        UITableView.appearance().tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: Double.leastNonzeroMagnitude))
+    }
+    
     @State var isActive : Bool = false
     
     var body: some View {
@@ -22,15 +27,16 @@ struct HomeView: View {
                        
                Spacer()
                 
-                NavigationLink(destination: TypePicker(rootIsActive: self.$isActive), isActive: $isActive) {   Button {
-                    isActive = true
-                } label: {
-                    Text("Add your review")
-                        .fontWeight(.medium)
-                }.modifier(PrimaryButton()) }
-                .padding(.top, 100)
-
-         
+                NavigationLink(destination: TypePicker(rootIsActive: self.$isActive), isActive: $isActive) {
+                    Button {
+                        isActive = true
+                    } label: {
+                        Text("Add your review")
+                            .fontWeight(.medium)
+                    }.modifier(PrimaryButton()) }
+                    .padding(.top, 100)
+                
+                
    
                 Spacer(minLength: 300)
             }
