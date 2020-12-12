@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ThanksView: View {
+    @Binding var shouldPopToRootView : Bool
+    
     var body: some View {
         ZStack {
             Color("secondColor")
@@ -30,16 +32,13 @@ struct ThanksView: View {
                     .padding()
                 
                 Spacer(minLength: 100)
-                Button {
-                    
-                } label: {
+                Button (action: { self.shouldPopToRootView = false } ){
                     Text("Back to home")
                         .foregroundColor(Color("mainColor"))
                         .underline()
-                    
                 }
                 Spacer(minLength: 10)
-
+                
             }
         }.ignoresSafeArea()
         .navigationBarBackButtonHidden(true)

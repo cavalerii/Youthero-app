@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var shouldShowNextView: Bool = false
+    @State var isActive : Bool = false
     
     var body: some View {
         NavigationView {
@@ -17,9 +17,8 @@ struct HomeView: View {
                 
                 Spacer(minLength: 10)
                        
-                NavigationLink(destination: TypePicker(), isActive: $shouldShowNextView) {   Button {
-                    shouldShowNextView = true
-            
+                NavigationLink(destination: TypePicker(rootIsActive: self.$isActive), isActive: $isActive) {   Button {
+                    isActive = true
                 } label: {
                     Text("Add your review!")
                 }.modifier(PrimaryButton()) }

@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct TypePicker: View {
+    @Binding var rootIsActive : Bool
+    
     @State var shouldShowTeacherView: Bool = false
     @State var shouldShowSchoolView: Bool = false
     
@@ -10,7 +12,7 @@ struct TypePicker: View {
             VStack {
                 Spacer()
                 
-                NavigationLink(destination: ThanksView(), isActive: $shouldShowTeacherView) {
+                NavigationLink(destination: ThanksView(shouldPopToRootView: $rootIsActive), isActive: $shouldShowTeacherView) {
                     Button {
                         shouldShowTeacherView = true
                     } label: {
@@ -34,7 +36,7 @@ struct TypePicker: View {
                 Spacer()
                 
 
-                NavigationLink(destination: ThanksView(), isActive: $shouldShowSchoolView) {
+                NavigationLink(destination: ThanksView(shouldPopToRootView: $rootIsActive), isActive: $shouldShowSchoolView) {
                     Button {
                         shouldShowSchoolView = true
                     } label: {
